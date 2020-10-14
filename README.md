@@ -37,11 +37,11 @@ tsne-cuda目前僅支持LINUX環境，支持CUDA 9.0、9.2、10.0、10.1。
 經過t-SNE降維後，6個Session各自成群是因為神經訊號會隨著時間變異，而Session2、Session3因為是同一天，所以兩個分佈相似。
   ![](results.png)  
 ### Options
---tsne: cuda_tsne.選擇是否用cuda_tsne，預設sklearn_tsne。  
---session:1,2,3,4,5,6.選擇Session，預設1 ~ 6。  
---sort:unsort, sorted.選擇是否sorted，預設unsort。  
---perplexity:5 ~ 50， t-SNE的困惑度，預設30。  
---lr:10 ~ 1000， t-SNE的learning_rate，預設500。  
+--tsne:選擇是否用cuda_tsne，預設sklearn_tsne。  
+--session:選擇Session，預設1 ~ 6。  
+--sort:選擇是否sorted，預設unsort。  
+--perplexity:t-SNE的困惑度(5 ~ 50)，預設30。  
+--lr:t-SNE的learning_rate(10 ~ 1000)，預設500。  
 例：用cuda_tsne、Session2 ~5、sorted data、perplexity=20、learning_rate=200
 
     python test.py --tsne cuda_tsne --session 2345 --sort sorted --perplexity 10 --lr 200  
