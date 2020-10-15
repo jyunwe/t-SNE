@@ -1,8 +1,8 @@
 ## Neural Computation Laboratory
 https://nckunclab.wixsite.com/neuralcomputationlab  
-本實驗室研究猴子與大鼠的腦波，以類神經網路為基礎，設計侵入式腦機介面，幫助患者以意念控制外部機器
+本實驗室研究猴子與大鼠的腦波，以類神經網路為基礎，設計侵入式腦機介面，幫助患者以意念控制外部機器。
 # t-SNE
-高維度的神經訊號在觀察與解碼的過程需要降維處理，t-SNE(t-Distributed Stochastic Neighbor Embedding)是一種基於流行學習(manifold learning)的降維技術，適合高維數據集的降維與可視化。相較於其他常見降維方法如PCA、LLE等，t-SNE計算時間較長，為了縮短耗時，可使用GPU加速運算([tsne-cuda](https://github.com/CannyLab/tsne-cuda))。
+在腦波的研究中，目的是透過類神經網路從猴腦神經訊號中解碼出手指運動，為了設計適合的類神經網路要先觀察神經訊號的特性，高維度的神經訊號在觀察與解碼的過程需要降維處理，而t-SNE(t-Distributed Stochastic Neighbor Embedding)是一種基於流行學習(manifold learning)的降維技術，適合高維數據集的降維與可視化，可幫助我們觀察神經訊號分佈的。相較於其他常見降維方法如PCA、LLE等，t-SNE計算時間較長，為了縮短耗時，可使用GPU加速運算([tsne-cuda](https://github.com/CannyLab/tsne-cuda))。
 
 # 安裝
 test.py中包含了sklearn的t-SNE與tsne-cuda兩種。  
