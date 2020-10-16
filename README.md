@@ -37,7 +37,7 @@ tsne-cuda目前僅支持LINUX環境，支持CUDA 9.0、9.2、10.0、10.1。
     X_tsne = TSNE(n_components=2, perplexity=20, learning_rate=500).fit_transform(X)
 ### 範例
     python test.py
-經過t-SNE降維後，6個Session各自成群是因為神經訊號會隨著時間變異，而Session2、Session3因為是同一天，所以兩個分佈相似。
+經過t-SNE降維後，6個Session各自成群是因為神經訊號會隨著時間變異，而Session2、Session3因為是同一天，所以兩個分佈相似。  
 <img src="results.png" width="550" align="center" valign="center" />
 ### Options
 --tsne:選擇是否用cuda_tsne，預設sklearn_tsne。  
